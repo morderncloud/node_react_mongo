@@ -170,12 +170,24 @@ git push
 
 * To delete branch
 
-// remote 
+// remote
 git push -d origin $myBranch
 // local 
 git branch -D $myBranch
 
+* Tagging
 
+// local
+git tag $myTag -a "Creating tag"
+
+// remote
+git push origin $myTag
+or push all tags to remote repo
+git push origin --tags
+
+* Tag vs. branch
+
+separate thread of development that may run concurrently with other development efforts on the same code base. Changes to a branch may eventually be merged back into another branch to unify them.
 
 
 
