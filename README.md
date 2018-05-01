@@ -168,6 +168,12 @@ git merge $myBranch
 git status
 git push
 
+* To delete branch
+
+// remote 
+git push -d origin $myBranch
+// local 
+git branch -D $myBranch
 
 
 
