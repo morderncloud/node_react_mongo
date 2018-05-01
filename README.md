@@ -93,6 +93,24 @@ npm install --save passport passport-google-oauth20
 
 * npm run dev
 
+## Use external thirdparty mongoDB
+
+* [Cloud MongoDB](https://mlab.com/)
+* Sandbox 500MB
+* To connect using the mongo shell:
+
+    mongo ds263989.mlab.com:63989/bluemongo -u <dbuser> -p <dbpassword>
+
+* To connect using a driver via the standard MongoDB URI (what's this?):
+
+    mongodb://<dbuser>:<dbpassword>@ds263989.mlab.com:63989/bluemongo
+
+## Install module Mongoose
+
+npm install --save mongoose
+
+
+
 
 
 
