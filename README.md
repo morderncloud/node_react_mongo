@@ -152,7 +152,7 @@ You need to be in the master branch.
 git checkout master
 git merge NAME-OF-BRANCH
 
-
+* Added in node_branch2
 
 
 
