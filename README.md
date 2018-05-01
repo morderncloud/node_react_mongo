@@ -40,7 +40,25 @@ node index.js
 heroku create
 https://whispering-retreat-20762.herokuapp.com/ | https://git.heroku.com/whispering-retreat-20762.git
 
+git add .
+git commit -m "prepare for heroku"
+git remote add heroku https://git.heroku.com/whispering-retreat-20762.git
+git push heroku master
 
+``` javascript
+    ...
+    remote:        https://whispering-retreat-20762.herokuapp.com/ deployed to Heroku
+    remote:
+    remote: Verifying deploy... done.
+    To https://git.heroku.com/whispering-retreat-20762.git
+    * [new branch]      master -> master
+    ...
+```
+
+https://whispering-retreat-20762.herokuapp.com/hi
+https://dashboard.heroku.com/apps
+
+Note: index.js and package.json should be in the root of the repo folder. Or the build might fail.
 
 
 
