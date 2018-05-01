@@ -82,7 +82,6 @@ npm install --save passport passport-google-oauth20
 
 ## Register Google Developer, create a project, Enable Googe + API (OAuth 2.0 would be enabled), create credential
 
-<<<<<<< HEAD
 ## Auto restart node server after a change
 
 * npm install --save nodemon
@@ -110,10 +109,34 @@ npm install --save passport passport-google-oauth20
 
 npm install --save mongoose
 
+## Git mgmt
+
+* Revert a local commit
+
+git reflog
+git reset $hash
+
+* Revert a pushed commit
+
+git reflog
+git revert $hash1 $hashN
+
+* Override local change with pushed commit on the repo
+
+git checkout -- $filename 
+or all local changes
+git checkout .
+
+* Remove/discard untracked file(f) or directories(-fd):
+
+git clean -f
+git clean -fd
 
 
-=======
->>>>>>> parent of 0aeaae9... Added google OAuth
+
+
+
+
 
 
 
