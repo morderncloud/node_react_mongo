@@ -109,6 +109,9 @@ npm install --save passport passport-google-oauth20
 
 npm install --save mongoose
 
+## Install module cookie-session
+npm install --save cookie-session
+
 ## Git mgmt
 
 * Revert a local commit
