@@ -135,6 +135,20 @@ git checkout .
 git clean -f
 git clean -fd
 
+* Merge created branch with master branch 
+
+You need to be in the created branch.
+
+git checkout NAME-OF-BRANCH
+git merge master
+
+* Merge master branch with created branch 
+
+You need to be in the master branch.
+
+git checkout master
+git merge NAME-OF-BRANCH
+
 
 
 
