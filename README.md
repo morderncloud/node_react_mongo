@@ -154,6 +154,20 @@ git merge NAME-OF-BRANCH
 
 * Added in node_branch2
 
+* Checkout master > create a branch > make changes > commit & push > merge master with the created branch
+
+git checkout $masterRepo
+git checkout -b $myBranch
+git status
+make some changes
+git add .
+git commit -m "modified in my branch"
+git push origin $myBranch
+git checkout master
+git merge $myBranch
+git status
+git push
+
 
 
 
