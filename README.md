@@ -139,7 +139,10 @@ git clean -fd
 
 You need to be in the created branch.
 
-git checkout NAME-OF-BRANCH
+// checkout a current branch
+git checkout NAME-OF-BRANCH 
+// or create a new branch
+git checkout -b $branchName 
 git merge master
 
 * Merge master branch with created branch 
