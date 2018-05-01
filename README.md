@@ -82,6 +82,17 @@ npm install --save passport passport-google-oauth20
 
 ## Register Google Developer, create a project, Enable Googe + API (OAuth 2.0 would be enabled), create credential
 
+## Auto restart node server after a change
+
+* npm install --save nodemon
+* Add script dev
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+
+* npm run dev
+
 
 
 
