@@ -19,7 +19,8 @@ passport.use(
     new googleStrategy({
             clientID: keys.googleClientID,
             clientSecret: keys.googleClientSecret,
-            callbackURL: "/auth/google/callback"
+            callbackURL: "/auth/google/callback",
+            proxy: true
         },
         //accessToken => { is ok if only one arg
         (accessToken, refreshToken, profile, done) => {
