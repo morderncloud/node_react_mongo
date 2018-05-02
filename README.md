@@ -121,6 +121,10 @@ npm install --save cookie-session
 
 * cd client && npm start
 
+## Install module concurrently
+
+* npm install --save concurrently
+
 ## Git mgmt
 
 * Revert a local commit
