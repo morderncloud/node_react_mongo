@@ -110,7 +110,16 @@ npm install --save passport passport-google-oauth20
 npm install --save mongoose
 
 ## Install module cookie-session
+
 npm install --save cookie-session
+
+## Install module create-react-app
+
+* sudo npm install -g create-react-app
+
+* create-react-app client
+
+* cd client && npm start
 
 ## Git mgmt
 
