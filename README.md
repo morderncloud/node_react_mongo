@@ -178,7 +178,7 @@ git branch -D $myBranch
 * Tagging
 
 // local
-git tag $myTag -a "Creating tag"
+git tag $myTag -a
 
 // remote
 git push origin $myTag
