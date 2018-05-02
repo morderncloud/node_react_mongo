@@ -5,6 +5,8 @@ const passport = require('passport');
 const cookieSession = require('cookie-session');
 const app = new express();
 
+//console.log('keys - ' + keys.googleClientID);
+
 require('./models/User');
 require("./services/passportService");
 
