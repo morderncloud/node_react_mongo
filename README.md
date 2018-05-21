@@ -12,13 +12,13 @@ npm install --save express
 
 create index.js
 
-``` javascript
+```javascript
 const express = require("express");
 const app = new express();
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 
 app.get("/hi", (req, res) => {
-    res.send({Hi: "Bruce"})
+  res.send({ Hi: "Bruce" });
 });
 
 app.listen(PORT);
@@ -32,8 +32,8 @@ node index.js
 
 * Install Heroku cli on local
 
-    brew install heroku
-    heroku -v
+  brew install heroku
+  heroku -v
 
 * Create heroku app
 
@@ -49,8 +49,7 @@ git remote add heroku https://git.heroku.com/whispering-retreat-20762.git
 // Push master to the new remote repo
 git push heroku master
 
-
-``` javascript
+```javascript
     ...
     remote:        https://whispering-retreat-20762.herokuapp.com/ deployed to Heroku
     remote:
@@ -73,7 +72,6 @@ heroku logs
 
 https://dashboard.heroku.com/apps
 
-
 ## Authentication through OAuth, like Google, Facebook, Twitter
 
 * http://www.passportjs.org/
@@ -87,8 +85,8 @@ npm install --save passport passport-google-oauth20
 * npm install --save nodemon
 * Add script dev
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+  "start": "node index.js",
+  "dev": "nodemon index.js"
   },
 
 * npm run dev
@@ -99,11 +97,11 @@ npm install --save passport passport-google-oauth20
 * Sandbox 500MB
 * To connect using the mongo shell:
 
-    mongo ds263989.mlab.com:63989/bluemongo -u <dbuser> -p <dbpassword>
+  mongo ds263989.mlab.com:63989/bluemongo -u <dbuser> -p <dbpassword>
 
 * To connect using a driver via the standard MongoDB URI (what's this?):
 
-    mongodb://<dbuser>:<dbpassword>@ds263989.mlab.com:63989/bluemongo
+  mongodb://<dbuser>:<dbpassword>@ds263989.mlab.com:63989/bluemongo
 
 ## Install module Mongoose
 
@@ -125,6 +123,10 @@ npm install --save cookie-session
 
 * npm install --save concurrently
 
+## React production build
+
+* cd client && npm run build
+
 ## Git mgmt
 
 * Revert a local commit
@@ -139,7 +141,7 @@ git revert $hash1 $hashN
 
 * Override local change with pushed commit on the repo
 
-git checkout -- $filename 
+git checkout -- $filename
 or all local changes
 git checkout .
 
@@ -148,17 +150,17 @@ git checkout .
 git clean -f
 git clean -fd
 
-* Merge created branch with master branch 
+* Merge created branch with master branch
 
 You need to be in the created branch.
 
 // checkout a current branch
-git checkout NAME-OF-BRANCH 
+git checkout NAME-OF-BRANCH
 // or create a new branch
-git checkout -b $branchName 
+git checkout -b $branchName
 git merge master
 
-* Merge master branch with created branch 
+* Merge master branch with created branch
 
 You need to be in the master branch.
 
@@ -185,7 +187,7 @@ git push
 
 // remote
 git push -d origin $myBranch
-// local 
+// local
 git branch -D $myBranch
 
 * Tagging
@@ -201,7 +203,3 @@ git push origin --tags
 * Tag vs. branch
 
 separate thread of development that may run concurrently with other development efforts on the same code base. Changes to a branch may eventually be merged back into another branch to unify them.
-
-
-
-
